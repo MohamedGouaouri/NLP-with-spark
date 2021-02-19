@@ -18,8 +18,8 @@
 
 
 
-<div style="text-align:center"><h1>NLP avec Spark</h1></div>
-<div style="text-align:center"><h2>Analyse des sentiments dans les commentaires</h2></div>
+<div style="text-align:center"><h1>NLP with Spark</h1></div>
+<div style="text-align:center"><h2>Sentiment analysis in comments</h2></div>
 
 
 
@@ -39,64 +39,65 @@
 
 
 
-Travail fait par  **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
+Work done by **CHEBBAH Mehdi** and **HAMMAS Ali Cherif**.
 
 <div class="page-break"></div>
 
 
 
-<h1>Table de contenu</h1>
+<h1>Table of contents</h1>
 
 [TOC]
 
 <div class="page-break"></div>
 
-# C'est quoi NLP ?
+# What is NLP?
 
-Le NLP (*Natural Language Processing*) est une **branche de l’intelligence artificielle** qui s’occupe particulièrement du traitement du langage écrit aussi appelé avec le nom français TALN (traitement automatique du langage naturel) ou TLN. En bref, c’est tout ce qui est lié au langage humain et au traitement de celui-ci par des outils informatiques.
+NLP (*Natural Language Processing*) is a **branch of artificial intelligence** which deals particularly with the processing of written language also called with the French name TALN (Traitement automatique du langage naturel) or TLN. In short, it is everything related to human language and its processing by automated tools.
 
-Le NLP peut être divisé en 2 grandes parties, le **NLU** (*Natural Language Understanding*) et le **NLG** (*Natural Language Generation*).
+The NLP can be divided into 2 main parts, the **NLU** (*Natural Language Understanding*) and the **NLG** (*Natural Language Generation*).
 
--  Le premier concerne toute la partie « compréhension » du texte, prendre un texte en entrée et pouvoir en ressortir des données. Ce type est très utilisé dans:
+- The first concerns the "comprehension" part of the text, taking a text as input and being able to extract data from it. This type is widely used in:
 
-   -  Les filtres spam dans les émail.
-   -  La collection des avis des utilisateur pour un produit.
-   -   Les chat-bots.
-   -  Les recommandations des produits dans le E-commerce.
-   -  etc
+   - Email spam filters.
+   - The collection of user reviews for a product.
+   - Chat-bots.
+   - Product recommendations in E-commerce.
+   - etc
 
--  Le second, est générer du texte à partir des données, pouvoir construire des phrases cohérentes de manière automatique. Ce type est très utilisé dans:
-   -  La traduction automatique.
-   -  Les chat-bots.
-   -  Les applications de type *Siri* ou *Google Assistent*.
-   -  La génération automatique des rapport financières.
-   -  etc
+-  The second, is to generate text from the data, to be able to build coherent sentences automatically. This type is widely used in:
+
+   - Machine translation.
+   - Chat-bots.
+   - Applications such as *Siri* or *Google Assistent*.
+   - Automatic generation of financial reports.
+   - etc
 
 
 
-# Le prétraitement des données en NLP
+# Data pre-processing in NLP
 
-## Théoriquement: 
+## Theoretically: 
 
-Il existe plusieurs sources de données que peuvent servir dans le process du NLP, par exemple **le web scraping**, **les réseaux sociaux**, **Les bases de données**, **Les données en temps réel (Streaming)**, ...etc
+There are several data sources that can be used in the NLP process, for example **Web scraping**, **Social networks**, **Databases**, **Real time data (Streaming)**, ...etc...
 
-Et selon le source des données (donc ça qualité) on fait le prétraitement. Mais globalement il existe 3 phases:
+And depending on the source of the data (so its quality) we do the pre-processing. But globally there are 3 phases:
 
-+  **Traiter les valeurs manquantes**: C'est une phase très importante dans la préparation des données pour tous type de modèle (NLP ou autre). Il existe plusieurs approches pour régler le problème des valeurs manquantes sans les supprimer (car la suppression de ces valeur peut biaiser le modèle)
-+  **Annoter les données**: Cette phase en général est faites en utilisant l'intelligence humain (plusieurs humains lisent les données et les classifient selon des classes prédéfinis), Ou en utilisant des algorithmes de machine Learning non-supervisé (ou semi-supervisé) pour faire l'annotation.
-+  **nettoyage des données**: Cette phase dépend des sources de données et de ces qualité et aussi de l'objective de l'analyse. On peut (comme on peut pas) trouver les traitements suivantes:
-   +  **Éliminer les tag HTML**: (pour les données scrapées)
-   +  **Supprimer les espaces blancs supplémentaires** (Supprimer le bruit)
-   +  **Convertir tous les caractères en minuscules**
-   +  **Suppression de mots vides**: (dépend de la langue) *par exemple: pour, a, on, de, dans, ...*
-   +  **Supprimer la ponctuation**
-   +  **lemmatisation**: transformation de chaque mot a ça forme de base *par exemple (fait => faire), ...)*
-   +  **Tokenisation**: découper les documents (textes) en en plus petits morceaux appelés jetons.
-   +  **TF-IDF**: (de l'anglais *term frequency-inverse document frequency*) est une mesure statistique permet d'évaluer l'importance d'un terme contenu dans un document, relativement à une collection. Le poids augmente proportionnellement au nombre d'occurrences du mot dans le document. Il varie également en fonction de la fréquence du mot dans la collection.
++ **Processing missing values**: This is a very important phase in the preparation of data for all types of models (NLP or other). There are several approaches to solve the problem of missing values without deleting them (because the deletion of these values can bias the model)
++ **Annotate the data**: This phase is usually done using human intelligence (several humans read the data and classify it according to predefined classes), or using unsupervised (or semi-supervised) Machine Learning algorithms to do the annotation.
++ **Data cleansing**: This phase depends on the data sources and data quality and also on the objective of the analysis. We can (as we can't) find the following treatments:
+   + **Eliminate HTML tags**: (for scrapped data)
+   + **Delete additional white spaces** (Remove noise)
+   + **Convert all characters to lowercase** **Convert all characters to lowercase
+   + **Deleting empty words**: (depends on language) *for example: for, a, on, de, in, ...*
+   + **Delete punctuation**
+   + **lemmatization**: transformation of each word to its base form *for example (done => to do), ...)*.
+   + **Tokenization**: cutting documents (texts) into smaller pieces called tokens.
+   + **TF-IDF**: (*term frequency-inverse document frequency*) is a statistical measure used to evaluate the importance of a term contained in a document, relative to a collection. The weight increases in proportion to the number of occurrences of the word in the document. It also varies according to the frequency of the word in the collection.
 
-## En pratique
+## In Practice
 
-On va tout d'abord créer une session Spark
+First, we will create a Spark session.
 
 ```python
 import findspark
@@ -106,9 +107,9 @@ from pyspark import SparkContext
 sc = SparkContext("local", "NLP App")
 ```
 
-On a utiliser `findspark` pour initialiser un environnement `Spark` dans l'environnement `conda`. Puis initialiser un `SparkContext`.
+We used `findspark` to initialize a `Spark` environment in the `conda` environment. Then initialize a `SparkContext`.
 
-Maintenant on peut importer les data-sets
+Now we can import the data-sets
 
 ```python
 dataset_path = '/path/to/datasets/files/folder/'
@@ -117,22 +118,22 @@ data = sc.textFile(dataset_path + "*.txt").map(lambda line: line.split("\t"))
 stopwords = sc.textFile(stopwords_path + "english").collect()
 ```
 
-Puis on prépare les données pour le prétraitement (on sépare les documents des annotations)
+Then we prepare the data for pre-processing (we separate the documents from the annotations).
 
 ```python
 documents = data.map(lambda line: line[0])
 labels = data.map(lambda line: line[1])
 ```
 
-Le prétraitement des données suit le schéma suivant:
+1. The pre-processing of the data follows the following scheme:
 
-1.  Convertir les documents en minuscule.
+   1.  Convert documents to lowercase.
 
-2. Supprimer la ponctuation.
+   2.  Remove punctuation.
 
-3. Supprimer les espaces blancs supplémentaires.
+   3.  Remove additional white space.
 
-4. Tokenisation (en mots).
+   4.  Tokenization (in words).
 
    ```python
    def lower_clean_str(x):
@@ -146,7 +147,7 @@ Le prétraitement des données suit le schéma suivant:
    documents = documents.map(lambda line: re.sub(" +", ' ', lower_clean_str(line)).split(" "))
    ```
 
-5. Supprimer les mots vides.
+2. Delete empty words.
 
    ```python
    def removeStopWords(words, stopwords):
@@ -159,7 +160,7 @@ Le prétraitement des données suit le schéma suivant:
    # ['sure','lost','flat','characters','audience','nearly','half','walked']]
    ```
 
-6. Appliquer TF-IDF
+3. Apply TF-IDF
 
    ```python
    from pyspark.mllib.feature import HashingTF, IDF
@@ -174,7 +175,7 @@ Le prétraitement des données suit le schéma suivant:
    tfidfIgnore = idfIgnore.transform(tf)
    ```
 
-7. Préparer les structures de données nécessaires pour la création du modèle: pour la phase *training* le modèle prend comme *input* la structure `RDD of LabeledPoints`
+4. Prepare the required data structures for the creation of the model: for the *training* phase the model takes as *input* the structure `RDD of LabeledPoints`.
 
 ```python
 from pyspark.mllib.regression import LabeledPoint
@@ -187,88 +188,88 @@ training, test = trainingData.randomSplit([0.7, 0.3])
 
 
 
-# Les types d'analyse NLP
+# NLP analysis types
 
-Il existe deux grandes catégories du NLP (selon l’algorithme d'analyse):
+There are two main categories of NLP (depending on the analysis algorithm):
 
->  ##### Remarque:
+>  ##### Note:
 >
->  Dans ce travail on va utiliser (Pratiquement) un modèle statistique qui se base sur des algorithmes supervisés. Mais les méthodes de Deep Learning sont expliquées théoriquement seulement.  
+>  In this work we will (practically) use a statistical model based on supervised algorithms. However, the methods of Deep Learning are only explained theoretically.  
 
 
 
-## Basé Machine Learning (statistique)
+## Machine Learning based (statistics)
 
-Cette catégorie des algorithmes est la plus utiliseé vu sa simplicité, on peut trouver deux approches utilisées pour des objectives différents:
+This category of algorithms is the most used because of its simplicity, we can find two approaches used for different objectives:
 
-### Les méthodes supervisées
+### Supervised methods
 
-Nécessite que la data-set soit annotée. Ces méthodes sont utilisées pour l'analyse des sentiment, extraction des information des données, texte classification, ...etc. Les algorithmes les plus utilisés sont:
+Requires the data set to be annotated. These methods are used for sentiment analysis, extraction of information from data, text classification, etc... The most commonly used algorithms are:
 
-+  *Support Vector Machines (SVM)*
-+  *Naïve Bayes*
-+  *Champ aléatoire conditionnel (CRF)*
-+  *Réseaux bayésien*
-+  ... etc
+* *Support Vector Machines (SVM)*
+* *Naïve Bayes*
++ *Conditional Random Field (CRF)*.
++ *Bayesian Networks* 
++ ... etc
 
-### Les méthodes non-supervisées
+### Unsupervised methods
 
-Ne nécessite pas l'annotation du data-sets. Et elles sont utilisées pour la morphologie, la segmentation des phrases, classification des textes, désambiguïsation lexicale, traduction, ...etc. 
+Does not require annotation of the data-sets. And they are used for morphology, sentence segmentation, text classification, lexical disambiguation, translation, ...etc. 
 
 
 
-## Basé Deep Learning
+## Deep Learning based
 
-Dernièrement l'apprentissage en profondeur (Deep Learning) est devenu l'une des méthodes les plus utilisées pour résoudre des problèmes d'apprentissages complexes puisqu'il permet non seulement d'étendre les limites des modèles précédemment vu (les modèles statistiques) mais également de donner parfois d’excellents résultats selon le contexte ou il est utilisé.
+Recently, Deep Learning has become one of the most used methods to solve complex learning problems since it allows not only to extend the limits of the models previously seen (statistical models) but also to give sometimes excellent results depending on the context in which it is used.
 
-Même s'il existe plusieurs recherches établies jusqu’à maintenant mais il y a deux approches qui sont largement utilisées pour le NLP (`CNN` et `RNN`).
+Although there is a lot of established researches so far, there are two approaches that are widely used for NLP (`CNN` and `RNNN`).
 
 ### `CNN`
 
-**Les `CNN`** (Réseau neuronal convolutif) est un type de réseau de neurones artificiels (`ANN`) qui comme son nom l'indique est un ensemble de neurones (représentent des poids) qui sont classé en couches (`layers`). La principale différence entre le `CNN` et `ANN` est que contrairement au `ANN` qui repose sur des fonction d'activations pour passer d'une couche a une autre, le `CNN` applique des filtres sur les données en entrées pour extraire les features.
+The **`CNN`** ( *Convolutional Neural Network*) is a type of artificial neural network (`ANN`) which as its name implies is a set of neurons (representing weights) that are classified in `layers`. The main difference between the `CNN` and `ANN` is that unlike the `ANN` which relies on activation functions to move from one layer to another, the `CNN` applies filters to the input data to extract features.
 
 ![](rapport.assets/0-NYqnYrLeC1J0Bon5.png)
 
-Le principe de cette approche consiste tout d'abord a découper les phrases en mots qui sont par la suite transformés en une matrice d'intégrations de mots (la matrice qui est en entrée)  de dimension d, puis juste après découpe la matrice en entrée en plusieurs régions pour qu'ensuite on applique les différents filtres sur les matrices qui les correspondent, puis une étape cruciale appelé le `pooling` doit être lancée, cette dernière consiste a effectuer des transformations sur les matrices résultantes pour être égales a une taille déjà prédéfinie. On peut identifier deux principales raisons a cette méthode : 
+The idea of this approach consists first of all in cutting the sentences into words which are then transformed into a matrix of word integrations (the input matrix) of dimension d, then just after the input matrix is cut into several regions so that the different filters are then applied to the corresponding matrices, then a crucial step called "pooling" must be launched, which consists in carrying out transformations on the resulting matrices to be equal to a predefined size. There are two main reasons for this process: 
 
-1. Donner une taille fixe a la matrice de sorties
-2. Réduire la taille de la matrice de sorties 
+1. To give a fixed size to the output matrix
+2. Reduce the size of the output matrix 
 
-et ce quelque soit la taille de la matrice en entrée. Au final on aura la représentation de la phase finale qui représente un classificateur basé sur les features extraites.
+whatever the size of the input matrix. At the end we will have the representation of the final phase which represents a classifier based on the extracted features.
 
 ![](rapport.assets/Screenshot from 2020-06-07 19-19-17.png)
 
-En général, les CNN sont efficaces car ils peuvent extraire des indices sémantiques lorsqu'il s'agit du contexte globale , mais ils ont du mal à préserver l'ordre séquentiel et à modéliser les informations contextuelles à longue distance. Les modèles récurrents sont mieux adaptés à ce type d'apprentissage et ils sont abordés ci-après.
+In general, **CNNs** are efficient because they can extract semantic clues when it comes to the global context, but they have difficulty preserving sequential order and modeling long distance contextual information. Recurrent models are better suited for this type of learning and are discussed below.
 
 ### `RNN`
 
-**Les `RNN`s** (Réseau de neurones récurrents) sont des réseaux de neurones conçus spécialement pour être très performant lorsqu'il s'agit des données en séquences et ceci leur donne un très grand avantage pour le NLP. Les `RNN`s sont très bons pour le traitement des données en séquence puisqu'ils reposent sur un concept appelé ` Sequential Memory` , ce dernier consiste a apprendre les choses en se basant sur un mécanisme qu'on utilise nous les humains énormément dans notre vie, voici l'une des méthodes les plus efficace pour le modéliser.
+**`RNNs`** (Recurrent Neuron Networks) are neural networks that are specifically designed to perform very well when it comes to sequenced data and this gives them a very big advantage for NLP. RNNs are very good at processing sequenced data since they are based on a concept called Sequential Memory, which consists of learning things based on a mechanism that we humans use a lot in our lives, this is one of the most efficient methods to model it.
 
-Donc si on demande a quelqu'un de réciter les alphabets dans l'ordre normal 
+So if we ask someone to recite the alphabets in normal order.
 
 ` A B C D E F G H I J K L M N O P Q R S T U V W X Y Z `
 
-Il n'aura aucune difficulté a le faire mais si on lui donne un alphabet au milieu et on lui demande de compléter la séquence il aura quelques difficultés mais juste après il va pouvoir les réciter très rapidement et ceci puisque cette personne avait appris les alphabets en séquence.
+He won't have any difficulty to do it but if we give him an alphabet in the middle and we ask him to complete the sequence he will have some difficulties but right after he will be able to recite them very quickly and this since this person had learned the alphabets in sequence.
 
-Voici un défis plus difficile qui consiste a réciter les alphabet dans l'ordre inverse 
+A more difficult challenge is to recite the alphabet in reverse order.  
 
 ` Z Y X W V U T S R Q P O N M L K J I H G F E D C B A `
 
-cela devient encore plus difficile même si tout le monde connaît les alphabets, juste le fait que le séquencement n'est pas respecté rend la tache difficile et même parfois impossible, la même chose est appliqué pour les `RNN`s.
+it becomes even more difficult even if everyone knows the alphabets, just the fact that the sequencing is not respected makes the task difficult and even sometimes impossible, the same thing is applied for `RNNs`.
 
-Pour pouvoir inclure ce concept dans ces réseau de neurones il suffit juste de prendre un `ANN` simple, puis dans chaque couche on crée un arcs qui permet de rattacher la sortie a l'entrée, grâce a cela les données de l'état précédent vont être ajoutées aux données de l’état courant
+To be able to include this concept in these neural networks it is enough to take a simple `ANN`, then in each layer an arc is created that allows to connect the output to the input, this way the data of the previous state will be added to the data of the current state.
 
 ![](rapport.assets/Screenshot from 2020-06-07 17-45-52.png)
 
-Donc le principale avantage du Réseau de neurones récurrents et la possibilité de donner un sens aux séquencements de mots pour savoir avec précision  le sujet et le contexte de cette phrase, le meilleur exemple ou l'on peut appliquer ce modèle est un chat-bot car il permet facilement de comprendre ce que l'utilisateur veut a travers la phrase qu'il a exprimé en entrée et par la suite le modèle pourra définir la meilleur réponse et la plus convenable par rapport a ce qui a été demandé.
+Therefore, the main advantage of the Recurrent Neural Network is the possibility of giving a meaning to the word sequences in order to know precisely the subject and the context of that sentence, the best example where this model can be applied is a chat-bot because it allows to easily understand what the user wants through the sentence he has expressed in the input and afterwards the model will be able to define the best and most suitable answer in relation to what has been asked for.
 
 
 
-# La construction et teste des modèles
+# Building and testing the models
 
-On va construire 3 modèles
+We will build 3 models
 
-+  Le premier c'est naïve bayes
++ The first is naive bayes
 
 ```python
 from pyspark.mllib.classification import NaiveBayes
@@ -277,7 +278,7 @@ model1 = NaiveBayes.train(training, 5.0)
 predictionAndLabel_NB = test.map(lambda p: (model1.predict(p.features), p.label))
 ```
 
-+  Le deuxième c'est SVM
++  The second is SVM
 
 ```python
 from pyspark.mllib.classification import SVMWithSGD
@@ -285,7 +286,7 @@ model2 = SVMWithSGD.train(training, iterations=100)
 predictionAndLabel_SVM = test.map(lambda p: (model2.predict(p.features), p.label))
 ```
 
-+  Le troisième c'est RF
++  The third is RF
 
 ```python
 from pyspark.mllib.tree import RandomForest
@@ -294,15 +295,15 @@ predictions = model.predict(test.map(lambda x: x.features))
 predictionAndLabel_RF = test.map(lambda lp: lp.label).zip(predictions)
 ```
 
->  ##### Remarque:
+>  ##### Note:
 >
->  Les paramètres utilisées dans la création des modèles sont choisis de tel sort que **l'accuracy** des modèles soit la meilleure possible.
+>  The parameters used in the creation of the models are chosen in such a way that **the accuracy** of the models is the best possible.
 
 
 
-# Comparaison entre les modèles
+# Comparison between models
 
-On peut comparer **l'accuracy** des modèles
+We can compare **the accuracy** of the models as follows
 
 ```python
 def accuracy(predictionAndLabel):
@@ -321,14 +322,14 @@ print('model accuracy {}'.format(accuracy(predictionAndLabel_RF)))
 # Resultats: model accuracy 0.4868421052631579
 ```
 
-On remarque clairement que les modèles les plus adaptés au traitement de langage naturel sont **Naïve Bayes** et **SVM** avec une exactitude de **78%**.
+We can clearly see that the most suitable models for natural language processing are **Naïve Bayes** and **SVM** with an accuracy of **78%**.
 
 
 
-# Utilité de Spark
+# Usefulness of Spark
 
-L'utilisation de Spark  a apportée une grande différence en terme de: 
+The use of Spark has made a big difference in terms of: 
 
-+  **Temps**: Les structures de données offertes par Spark (`RDD`) sont facilement partageables sur des threads dans l'ordinateur (ou le `cluster` si utilisation dans un réseau) ce qui accélère le travail.
-+  **Re-utilisabilité**:  Le code utilisé dans un seul ordinateur (mode développement) est le même code utilisé dans le `cluster` (mode production)
-+  **Facilité d'utilisation**: Spark offert une `API` riche des structures de données, des algorithmes de Machine Learning et de calcule de performance des modèles, des méthodes puissantes d'exploration des données.
++ **Time**: The data structures offered by Spark (`RDD`) are easily shared on threads in the computer (or the `cluster` if used in a network) which speeds up the work.
++ **Re-usability**: The code used in a single computer (development mode) is the same code used in the cluster (production mode).
++ **Ease of use**: Spark offers rich `API` data structures, Machine Learning and model performance calculation algorithms, powerful data mining methods.
