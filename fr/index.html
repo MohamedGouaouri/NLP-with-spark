@@ -1,0 +1,1143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>readme</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --bg-color: #141d28;
+    --side-bar-bg-color: #090b10;
+    --control-text-color: #a9aaab;
+    --primary-color: #efb752;
+    --primary-btn-border-color: #f0b752;
+    --active-file-text-color: inherit;
+    --active-file-border-color: #f0b752;
+    --active-file-bg-color: #131c29;
+    --primary-btn-text-color: #f0b752;
+    --window-border: 1px solid #16161a;
+    --item-hover-bg-color: #1a283d;
+    --item-hover-text-color: #f0b752;
+    --meta-content-color: #f0b752;
+    --search-select-text-color: #f0b752;
+    --control-text-color: var(--text-color);
+    --control-text-hover-color: var(--text-color);
+    --heading-char-color: #f0b752;
+}
+
+.dropdown-menu {
+    background-color: #1a283d !important;
+    border-color: #313d50 !important;
+}
+
+html {
+    background: #141b28;
+    font-size: 0.925rem;
+}
+
+body {
+    background: #141b28;
+    color: #a9aaab;
+    font-family: "Nunito", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    height: 100%;
+    line-height: 1.6;
+}
+
+#write {
+    background: #131b29;
+    color: #a9aaab;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px;
+    padding-bottom: 100px;
+    position: static;
+    width: 90%;
+}
+
+#write>ul:first-child, #write>ol:first-child {
+    margin-top: 30px;
+}
+
+a {
+    color: #71bfd9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    cursor: text;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write pre {
+    color: #efb752;
+    width: auto;
+}
+
+#write h1::before, #write h2::before, #write h3::before, #write h4::before, #write h5::before, #write h6::before {
+    border-radius: 0;
+    bottom: 0;
+    color: #517090;
+    float: none;
+    font-size: 1rem;
+    font-variant: 'small-caps';
+    font-weight: bold;
+    left: auto;
+    line-height: 20px;
+    padding: 0;
+    position: absolute;
+    right: calc(100% + 10px);
+    vertical-align: baseline;
+}
+
+#write h1 {
+    font-size: 3.2rem;
+    margin: 0.6rem 0;
+}
+
+#write h1::before {
+    bottom: 1.45rem;
+    content: 'H1';
+}
+
+#write h2 {
+    font-size: 1.8rem;
+    margin: 0.7rem 0;
+}
+
+#write h2::before {
+    bottom: 0.2rem;
+    content: 'H2';
+}
+
+#write h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#write h3::before {
+    bottom: 0.18rem;
+    content: 'H3';
+}
+
+#write h4 {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+#write h4::before {
+    content: 'H4';
+    bottom: 0.15rem;
+}
+
+#write h5, #write h6 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#write h5::before, #write h6::before {
+    bottom: 0.1rem;
+}
+
+#write h5::before {
+    content: 'H5';
+}
+
+#write h6::before {
+    content: 'H6';
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt, h1 code {
+    font-size: inherit;
+}
+
+h2 tt, h2 code {
+    font-size: inherit;
+}
+
+h3 tt, h3 code {
+    font-size: inherit;
+}
+
+h4 tt, h4 code {
+    font-size: inherit;
+}
+
+h5 tt, h5 code {
+    font-size: inherit;
+}
+
+h6 tt, h6 code {
+    font-size: inherit;
+}
+
+h1 {
+    border-bottom: 1px solid #f79f2a;
+    font-size: 3.25em;
+    line-height: 1.2;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    border-bottom: 1px solid #f79f2a;
+    font-size: 2.75em;
+    line-height: 1.225;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.8em;
+    line-height: 1.43;
+}
+
+h4 {
+    font-size: 1.45em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: 0.8em 0;
+}
+
+#write ol, #write ul {
+    padding-left: 2rem;
+    margin: .5rem 0;
+}
+
+#write ol>li, #write ul>li {
+    color: #f0b752;
+}
+
+#write ol>li>*, #write ul>li>* {
+    color: #b0b0b0;
+}
+
+#write ol>li>*:not(ol):not(ul), #write ul>li>*:not(ol):not(ul) {
+    padding-left: .25rem;
+}
+
+#write ul {
+    list-style-type: disc;
+}
+
+hr {
+    background-color: #f0b752;
+    border: 0 none;
+    box-sizing: content-box;
+    height: 2px;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+ul:first-child, ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child, ol:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    font-family: 'Nunito', 'Times New Roman', serif;
+    margin: 1rem 0 1rem 2rem;
+    position: relative;
+}
+
+blockquote::before {
+    background: #f0b752;
+    content: '';
+    height: 100%;
+    left: -2rem;
+    position: absolute;
+    width: 0.25rem;
+}
+
+table {
+    font-size: 0.875rem;
+    padding: 0;
+    word-break: initial;
+}
+
+table tr {
+    border-top: 1px solid #57708d;
+    margin: 0;
+    padding: 0;
+}
+
+thead {
+    background-color: #324963;
+    color: #9dbbdd;
+}
+
+table tr th {
+    border: 1px solid #57708d;
+    border-bottom: solid 2px #ccc;
+    border-bottom: 0;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+table tr td {
+    background: #192534;
+    border: 1px solid #57708d;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+table tr th:first-child, table tr td:first-child {
+    margin-top: 0;
+}
+
+table tr th:last-child, table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding: 4px 0;
+}
+
+.code-tooltip {
+    background: #1a283d;
+    border-top: 1px solid #1a283d;
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, 0.3);
+}
+
+.dropdown-menu {
+    color: #70c0d8;
+    margin-right: 5px;
+}
+
+.file-action-item.not-empty-menu-group.show {
+    background: #1a283d;
+    border-color: #1a283d;
+}
+
+.sidebar-footer-main-item #sidebar-files-menu {
+    background: #1a283d;
+    border-color: #303d50 !important;
+    color: #6db7d1;
+}
+
+.file-action-item.not-empty-menu-group.show a:hover, .dropdown-menu a:hover {
+    background-color: #1a283d !important;
+    color: #f4c25e !important;
+}
+
+.info-panel-tab.active, .info-panel-tab.active a {
+    background: #000 !important;
+}
+
+.info-panel-tab.active {
+    background: #000 !important;
+}
+
+.info-panel-tab-border {
+    background: #000 !important;
+    border-color: #000 !important;
+}
+
+.file-action-item a {
+    color: #70bed9 !important;
+}
+
+.md-fences,
+/* code, */
+
+tt {
+    border-radius: 3px;
+    color: #b9bcba;
+    font-size: 0.9em;
+    padding: 0;
+}
+
+code {
+    background-color: #6952b6;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    padding: 5px 7px 2px 7px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 6px;
+    padding-top: 8px;
+}
+
+.md-task-list-item>input {
+    background: #1a283d;
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table, pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+    /* background-color: #f8f8f8; */
+}
+
+#write pre.md-meta-block {
+    background-color: #1a283d;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 85%;
+    line-height: 1.45;
+    margin-top: 0 !important;
+    padding: 1rem;
+}
+
+.mathjax-block>.code-tooltip {
+    bottom: 0.375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before {
+    left: -1.5625rem;
+    top: 0.375rem;
+}
+
+#write>h4.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
+}
+
+#write>h5.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
+}
+
+#write>h6.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
+}
+
+.md-image>.md-meta {
+    border-radius: 3px;
+    color: inherit;
+    font-size: 0.9em;
+    padding: 2px 0px 0px 4px;
+}
+
+.md-tag {
+    color: #70bfd9;
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+    border-bottom: 1px solid #090b11;
+    font-weight: normal;
+}
+
+#typora-sidebar .sidebar-tabs {
+    border-bottom: 1px solid #090b11;
+    font-family: 'Nunito' !important;
+    font-weight: bold;
+}
+
+#typora-sidebar .file-list-item-file-name {
+    color: #71bfd9;
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+#file-library-list-children {
+    background: #141d28;
+}
+
+#typora-sidebar .file-list-item-summary, #typora-sidebar .ty-search-item-line {
+    color: #c4d4ed;
+    font-family: 'Nunito';
+}
+
+.file-list-item-file-ext-part {
+    color: #57708d;
+    opacity: 1;
+}
+
+.active .file-list-item-file-ext-part {
+    color: #1b1531;
+    font-weight: bold;
+}
+
+.file-list-item.file-library-node.file-library-file-node {
+    background: #151b27;
+    border-color: #090c11;
+    opacity: 1;
+}
+
+.file-list-item.file-library-node.file-library-file-node:hover {
+    background: #090c11;
+    color: #fff;
+}
+
+#typora-sidebar #outline-content .outline-h1>.outline-item {
+    font-family: 'Nunito';
+}
+
+.info-panel-tab-wrapper {
+    background: #1a283d !important;
+    border-color: #1a283d !imporant;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active .file-node-background, #typora-sidebar .file-list-item.file-library-file-node.active {
+    background: #493a7e;
+    border-left: 4px solid #f0b752;
+    color: #fff;
+}
+
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+    outline: none;
+    border-color: #151d2b;
+}
+
+#typora-sidebar .file-list-item.file-library-file-node:hover {
+    background: #18202d;
+}
+
+#typora-sidebar .file-list-item.file-library-file-node.active .file-list-item-file-name-part {
+    color: #f0b752;
+}
+
+#typora-sidebar .file-list-item.file-library-file-node.active:hover {
+    background: #403173;
+}
+
+#typora-sidebar {
+    color: #83bed6;
+}
+
+.file-node-title {
+    color: #83bed6;
+}
+
+
+/* menu button hover */
+
+.sidebar-footer-item:hover {
+    background: none !important;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node {
+    padding: 0;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active .file-node-title {
+    color: #efb752;
+    color: #fff;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node:hover .file-node-title {
+    color: #efb752;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active:hover .file-node-title {
+    color: #fff;
+}
+
+#typora-sidebar .file-tree-node {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.file-node-icon {
+    color: #70bfd9;
+    margin-right: 8px;
+}
+
+.file-node-icon::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' fill='#70bfd9' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M438.944,352c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H133.056c-44.112,0-80,35.888-80,80v352 c0,44.112,35.888,80,80,80h245.888c44.113,0,80-35.888,80.001-80c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20 c0,22.056-17.944,40-40,40H133.056c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v252 C418.944,343.046,427.899,352,438.944,352z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M358.944,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S369.989,120,358.944,120z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M358.944,200h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S369.989,200,358.944,200z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M278.054,280H152.944c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h125.112c11.046,0,19.999-8.954,19.999-20 C298.054,288.954,289.1,280,278.054,280z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node:hover .file-node-icon::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' fill='#f4c25d' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M438.944,352c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H133.056c-44.112,0-80,35.888-80,80v352 c0,44.112,35.888,80,80,80h245.888c44.113,0,80-35.888,80.001-80c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20 c0,22.056-17.944,40-40,40H133.056c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v252 C418.944,343.046,427.899,352,438.944,352z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M358.944,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S369.989,120,358.944,120z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M358.944,200h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S369.989,200,358.944,200z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M278.054,280H152.944c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h125.112c11.046,0,19.999-8.954,19.999-20 C298.054,288.954,289.1,280,278.054,280z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active:hover .file-node-icon::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' fill='#ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M352.459,220c0-11.046-8.954-20-20-20h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206 C343.505,240,352.459,231.046,352.459,220z'/%3E%3Cpath d='M126.459,280c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H251.57c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20 H126.459z'/%3E%3Cpath d='M173.459,472H106.57c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v123 c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H106.57c-44.112,0-80,35.888-80,80v352 c0,44.112,35.888,80,80,80h66.889c11.046,0,20-8.954,20-20C193.459,480.954,184.505,472,173.459,472z'/%3E%3Cpath d='M467.884,289.572c-23.394-23.394-61.458-23.395-84.837-0.016l-109.803,109.56c-2.332,2.327-4.052,5.193-5.01,8.345 l-23.913,78.725c-2.12,6.98-0.273,14.559,4.821,19.78c3.816,3.911,9,6.034,14.317,6.034c1.779,0,3.575-0.238,5.338-0.727 l80.725-22.361c3.322-0.92,6.35-2.683,8.79-5.119l109.573-109.367C491.279,351.032,491.279,312.968,467.884,289.572z M333.776,451.768l-40.612,11.25l11.885-39.129l74.089-73.925l28.29,28.29L333.776,451.768z M439.615,346.13l-3.875,3.867 l-28.285-28.285l3.862-3.854c7.798-7.798,20.486-7.798,28.284,0C447.399,325.656,447.399,338.344,439.615,346.13z'/%3E%3Cpath d='M332.459,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S343.505,120,332.459,120z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.active .file-node-icon::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' fill='#ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M352.459,220c0-11.046-8.954-20-20-20h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206 C343.505,240,352.459,231.046,352.459,220z'/%3E%3Cpath d='M126.459,280c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H251.57c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20 H126.459z'/%3E%3Cpath d='M173.459,472H106.57c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v123 c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H106.57c-44.112,0-80,35.888-80,80v352 c0,44.112,35.888,80,80,80h66.889c11.046,0,20-8.954,20-20C193.459,480.954,184.505,472,173.459,472z'/%3E%3Cpath d='M467.884,289.572c-23.394-23.394-61.458-23.395-84.837-0.016l-109.803,109.56c-2.332,2.327-4.052,5.193-5.01,8.345 l-23.913,78.725c-2.12,6.98-0.273,14.559,4.821,19.78c3.816,3.911,9,6.034,14.317,6.034c1.779,0,3.575-0.238,5.338-0.727 l80.725-22.361c3.322-0.92,6.35-2.683,8.79-5.119l109.573-109.367C491.279,351.032,491.279,312.968,467.884,289.572z M333.776,451.768l-40.612,11.25l11.885-39.129l74.089-73.925l28.29,28.29L333.776,451.768z M439.615,346.13l-3.875,3.867 l-28.285-28.285l3.862-3.854c7.798-7.798,20.486-7.798,28.284,0C447.399,325.656,447.399,338.344,439.615,346.13z'/%3E%3Cpath d='M332.459,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S343.505,120,332.459,120z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.active .file-node-icon {
+    color: #fff;
+}
+
+.file-library-node.file-tree-node {
+    margin: 0;
+    padding: 0;
+}
+
+.file-library-node.file-tree-node.file-library-file-node .file-node-title {
+    color: #e7f3fd;
+}
+
+.file-library-node.file-tree-node.file-library-file-node:hover {
+    color: #fff;
+}
+
+.file-node-background {
+    padding: 25px 10px;
+}
+
+.file-node-content {
+    padding: 15px 5px;
+}
+
+.file-node-content:hover {
+    cursor: pointer;
+}
+
+.active .file-node-content {
+    font-weight: bold;
+}
+
+#typora-quick-open {
+    background-color: #464646;
+    border: 1px solid yellow;
+}
+
+#typora-quick-open-item {
+    background-color: #131c29;
+    border-color: #090c11;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+}
+
+
+/** focus mode */
+
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer {
+    font-family: "Nunito", "Arial", sans-serif;
+}
+
+.megamenu-opened header {
+    background-image: none;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+    background-color: #131b29 !important;
+    border-top: 1px solid #090b10;
+}
+
+.megamenu-menu-header {
+    border-bottom: 1px solid #090b10;
+}
+
+.megamenu-menu-list li:not(.saved) a:not(.active):hover, .megamenu-menu-list li a.active {
+    background: #101010 !important;
+}
+
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    /* background-color: #f79f2a; */
+    background-color: #090c12;
+    border-right: 1px solid #090c12;
+    font-weight: 100;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #090c12;
+}
+
+input {
+    color: #82bed6;
+}
+
+#searchpanel-word-option-btn, #find-and-replace-icon-word, #find-and-replace-icon-case, .searchpanel-search-option-btn, .icon, .glyphicon .popover, .popover-title {
+    color: #82bed6 !important;
+    fill: #82bed6 !important;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.long-btn:hover {
+    background-color: #82bed6;
+}
+
+.show-word-count #footer-word-count {
+    background: #000;
+}
+
+#recent-file-panel-action-btn {
+    background-color: #82bed6;
+}
+
+.dropdown-menu .divider {
+    border-color: #303d50;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    background: #999;
+    color: white;
+}
+
+.cm-s-inner {
+    border: 1px solid #324560;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
+    background-color: #192133 !important;
+    border: 1px solid #324560;
+    /* padding: 10px 20px; */
+}
+
+.cm-s-inner .CodeMirror-gutters {
+    border: 0;
+    color: #6d8a88;
+    width: 5ch;
+}
+
+.cm-s-inner .CodeMirror-cursor {
+    border-left: solid thin #f8f8f2 !important;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+    color: #6D8A88;
+    width: 4ch !important;
+}
+
+.cm-s-inner .CodeMirror-line::selection, .cm-s-inner .CodeMirror-line::-moz-selection, .cm-s-inner .CodeMirror-line>span::selection, .cm-s-inner .CodeMirror-line>span::-moz-selection, .cm-s-inner .CodeMirror-line>span>span::selection, .cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner span.cm-comment {
+    color: #6272a4;
+}
+
+.cm-s-inner span.cm-string, .cm-s-inner span.cm-string-2 {
+    color: #f1fa8c;
+}
+
+.cm-s-inner span.cm-number {
+    color: #bd93f9;
+}
+
+.cm-s-inner span.cm-variable, .cm-s-inner span.cm-variable-2 {
+    color: #50fa7b;
+}
+
+.cm-s-inner span.cm-def {
+    color: white;
+}
+
+.cm-s-inner span.cm-operator {
+    color: #ff79c6;
+}
+
+.cm-s-inner span.cm-keyword {
+    color: #ff79c6;
+}
+
+.cm-s-inner span.cm-atom {
+    color: #bd93f9;
+}
+
+.cm-s-inner span.cm-meta {
+    color: #f8f8f2;
+}
+
+.cm-s-inner span.cm-tag {
+    color: #ff79c6;
+}
+
+.cm-s-inner span.cm-attribute {
+    color: #50fa7b;
+}
+
+.cm-s-inner span.cm-qualifier {
+    color: #50fa7b;
+}
+
+.cm-s-inner span.cm-property {
+    color: #66d9ef;
+}
+
+.cm-s-inner span.cm-builtin {
+    color: #50fa7b;
+}
+
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #ffb86c;
+}
+
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.cm-s-inner .CodeMirror-selected, .cm-s-inner .CodeMirror-selectedtext {
+    background: #3b4254 !important;
+    color: inherit;
+    text-shadow: none;
+}
+
+#write>p:first-child:empty {
+    position: static;
+}
+
+#write>p:first-child:not(:only-child)::before, #write>p:only-child::before {
+    background: url("file:////home/mehdi/snap/typora/33/.config/Typora/themes/cobalt/splash.png") no-repeat 45% 90% transparent;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    max-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+#write>p:only-child:empty::before {
+    opacity: 1;
+}
+/* completely hide the element where it is not needed */
+.page-break
+{
+    display: none; 
+}
+@media print, (overflow-block: paged) or (overflow-block: optional-paged)
+{
+  .page-break
+  {
+    display: block;
+    page-break-after: always; /* CSS 2 */
+         break-after: page;   /* CSS 3+ */
+  }
+}
+
+p
+{
+	text-align: justify;
+}
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=' first-line-indent'><div style="text-align:center;font-size:30px">﷽</div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div style="text-align:center"><h1>NLP avec Spark</h1></div>
+<div style="text-align:center"><h2>Analyse des sentiments dans les commentaires</h2></div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span>Travail fait par  </span><strong><span>CHEBBAH Mehdi</span></strong><span> et </span><strong><span>HAMMAS Ali Cherif</span></strong></p><div class="page-break"></div><p>&nbsp;</p><h1>Table de contenu</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n28"><a class="md-toc-inner" href="#cest-quoi-nlp-">C'est quoi NLP ?</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n59"><a class="md-toc-inner" href="#le-prétraitement-des-données-en-nlp">Le prétraitement des données en NLP</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n60"><a class="md-toc-inner" href="#théoriquement">Théoriquement: </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n87"><a class="md-toc-inner" href="#en-pratique">En pratique</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n116"><a class="md-toc-inner" href="#les-types-danalyse-nlp">Les types d'analyse NLP</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n122"><a class="md-toc-inner" href="#basé-machine-learning-statistique">Basé Machine Learning (statistique)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n124"><a class="md-toc-inner" href="#les-méthodes-supervisées">Les méthodes supervisées</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n137"><a class="md-toc-inner" href="#les-méthodes-non-supervisées">Les méthodes non-supervisées</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n140"><a class="md-toc-inner" href="#basé-deep-learning">Basé Deep Learning</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n143"><a class="md-toc-inner" href="#cnn"><code>CNN</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n155"><a class="md-toc-inner" href="#rnn"><code>RNN</code></a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n167"><a class="md-toc-inner" href="#la-construction-et-teste-des-modèles">La construction et teste des modèles</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n185"><a class="md-toc-inner" href="#comparaison-entre-les-modèles">Comparaison entre les modèles</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n190"><a class="md-toc-inner" href="#utilité-de-spark">Utilité de Spark</a></span></p></div><div class="page-break"></div><h1><a name="cest-quoi-nlp-" class="md-header-anchor"></a><span>C&#39;est quoi NLP ?</span></h1><p><span>Le NLP (</span><em><span>Natural Language Processing</span></em><span>) est une </span><strong><span>branche de l’intelligence artificielle</span></strong><span> qui s’occupe particulièrement du traitement du langage écrit aussi appelé avec le nom français TALN (traitement automatique du langage naturel) ou TLN. En bref, c’est tout ce qui est lié au langage humain et au traitement de celui-ci par des outils informatiques.</span></p><p><span>Le NLP peut être divisé en 2 grandes parties, le </span><strong><span>NLU</span></strong><span> (</span><em><span>Natural Language Understanding</span></em><span>) et le </span><strong><span>NLG</span></strong><span> (</span><em><span>Natural Language Generation</span></em><span>).</span></p><ul><li><p><span>Le premier concerne toute la partie « compréhension » du texte, prendre un texte en entrée et pouvoir en ressortir des données. Ce type est très utilisé dans:</span></p><ul><li><span>Les filtres spam dans les émail.</span></li><li><span>La collection des avis des utilisateur pour un produit.</span></li><li><span>Les chat-bots.</span></li><li><span>Les recommandations des produits dans le E-commerce.</span></li><li><span>etc</span></li></ul></li><li><p><span>Le second, est générer du texte à partir des données, pouvoir construire des phrases cohérentes de manière automatique. Ce type est très utilisé dans:</span></p><ul><li><span>La traduction automatique.</span></li><li><span>Les chat-bots.</span></li><li><span>Les applications de type </span><em><span>Siri</span></em><span> ou </span><em><span>Google Assistent</span></em><span>.</span></li><li><span>La génération automatique des rapport financières.</span></li><li><span>etc</span></li></ul></li></ul><p>&nbsp;</p><h1><a name="le-prétraitement-des-données-en-nlp" class="md-header-anchor"></a><span>Le prétraitement des données en NLP</span></h1><h2><a name="théoriquement" class="md-header-anchor"></a><span>Théoriquement: </span></h2><p><span>Il existe plusieurs sources de données que peuvent servir dans le process du NLP, par exemple </span><strong><span>le web scraping</span></strong><span>, </span><strong><span>les réseaux sociaux</span></strong><span>, </span><strong><span>Les bases de données</span></strong><span>, </span><strong><span>Les données en temps réel (Streaming)</span></strong><span>, ...etc</span></p><p><span>Et selon le source des données (donc ça qualité) on fait le prétraitement. Mais globalement il existe 3 phases:</span></p><ul><li><p><strong><span>Traiter les valeurs manquantes</span></strong><span>: C&#39;est une phase très importante dans la préparation des données pour tous type de modèle (NLP ou autre). Il existe plusieurs approches pour régler le problème des valeurs manquantes sans les supprimer (car la suppression de ces valeur peut biaiser le modèle)</span></p></li><li><p><strong><span>Annoter les données</span></strong><span>: Cette phase en général est faites en utilisant l&#39;intelligence humain (plusieurs humains lisent les données et les classifient selon des classes prédéfinis), Ou en utilisant des algorithmes de machine Learning non-supervisé (ou semi-supervisé) pour faire l&#39;annotation.</span></p></li><li><p><strong><span>nettoyage des données</span></strong><span>: Cette phase dépend des sources de données et de ces qualité et aussi de l&#39;objective de l&#39;analyse. On peut (comme on peut pas) trouver les traitements suivantes:</span></p><ul><li><strong><span>Éliminer les tag HTML</span></strong><span>: (pour les données scrapées)</span></li><li><strong><span>Supprimer les espaces blancs supplémentaires</span></strong><span> (Supprimer le bruit)</span></li><li><strong><span>Convertir tous les caractères en minuscules</span></strong></li><li><strong><span>Suppression de mots vides</span></strong><span>: (dépend de la langue) </span><em><span>par exemple: pour, a, on, de, dans, ...</span></em></li><li><strong><span>Supprimer la ponctuation</span></strong></li><li><strong><span>lemmatisation</span></strong><span>: transformation de chaque mot a ça forme de base </span><em><span>par exemple (fait =&gt; faire), ...)</span></em></li><li><strong><span>Tokenisation</span></strong><span>: découper les documents (textes) en en plus petits morceaux appelés jetons.</span></li><li><strong><span>TF-IDF</span></strong><span>: (de l&#39;anglais </span><em><span>term frequency-inverse document frequency</span></em><span>) est une mesure statistique permet d&#39;évaluer l&#39;importance d&#39;un terme contenu dans un document, relativement à une collection. Le poids augmente proportionnellement au nombre d&#39;occurrences du mot dans le document. Il varie également en fonction de la fréquence du mot dans la collection.</span></li></ul></li></ul><h2><a name="en-pratique" class="md-header-anchor"></a><span>En pratique</span></h2><p><span>On va tout d&#39;abord créer une session Spark</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>5</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">findspark</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">findspark</span>.<span class="cm-property">init</span>(<span class="cm-string">'/opt/spark'</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span> <span class="cm-keyword">import</span> <span class="cm-variable">SparkContext</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">sc</span> = <span class="cm-variable">SparkContext</span>(<span class="cm-string">"local"</span>, <span class="cm-string">"NLP App"</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 113px;"></div><div class="CodeMirror-gutters" style="height: 113px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><p><span>On a utiliser </span><code>findspark</code><span> pour initialiser un environnement </span><code>Spark</code><span> dans l&#39;environnement </span><code>conda</code><span>. Puis initialiser un </span><code>SparkContext</code><span>.</span></p><p><span>Maintenant on peut importer les data-sets</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">dataset_path</span> = <span class="cm-string">'/path/to/datasets/files/folder/'</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">stopwords_path</span> = <span class="cm-string">'/path/to/stopwords/file/folder/'</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">data</span> = <span class="cm-variable">sc</span>.<span class="cm-property">textFile</span>(<span class="cm-variable">dataset_path</span> <span class="cm-operator">+</span> <span class="cm-string">"*.txt"</span>).<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">line</span>: <span class="cm-variable">line</span>.<span class="cm-property">split</span>(<span class="cm-string">"\t"</span>))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">stopwords</span> = <span class="cm-variable">sc</span>.<span class="cm-property">textFile</span>(<span class="cm-variable">stopwords_path</span> <span class="cm-operator">+</span> <span class="cm-string">"english"</span>).<span class="cm-property">collect</span>()</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 92px;"></div><div class="CodeMirror-gutters" style="height: 92px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><p><span>Puis on prépare les données pour le prétraitement (on sépare les documents des annotations)</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>2</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">documents</span> = <span class="cm-variable">data</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">line</span>: <span class="cm-variable">line</span>[<span class="cm-number">0</span>])</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">labels</span> = <span class="cm-variable">data</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">line</span>: <span class="cm-variable">line</span>[<span class="cm-number">1</span>])</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 50px;"></div><div class="CodeMirror-gutters" style="height: 50px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><p><span>Le prétraitement des données suit le schéma suivant:</span></p><ol start='' ><li><p><span>Convertir les documents en minuscule.</span></p></li><li><p><span>Supprimer la ponctuation.</span></p></li><li><p><span>Supprimer les espaces blancs supplémentaires.</span></p></li><li><p><span>Tokenisation (en mots).</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>9</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">lower_clean_str</span>(<span class="cm-variable">x</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable cm-error">punc</span>=<span class="cm-string">'!"#$%&amp;\'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~'</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">lowercased_str</span> = <span class="cm-variable">x</span>.<span class="cm-property">lower</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword cm-error">for</span> <span class="cm-variable">ch</span> <span class="cm-keyword">in</span> <span class="cm-variable">punc</span>:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">lowercased_str</span> = <span class="cm-variable">lowercased_str</span>.<span class="cm-property">replace</span>(<span class="cm-variable">ch</span>, <span class="cm-string">' '</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword cm-error">return</span> <span class="cm-variable">lowercased_str</span>.<span class="cm-property">strip</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">re</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">documents</span> = <span class="cm-variable">documents</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">line</span>: <span class="cm-variable">re</span>.<span class="cm-property">sub</span>(<span class="cm-string">" +"</span>, <span class="cm-string">' '</span>, <span class="cm-variable">lower_clean_str</span>(<span class="cm-variable">line</span>)).<span class="cm-property">split</span>(<span class="cm-string">" "</span>))</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 218px;"></div><div class="CodeMirror-gutters" style="height: 218px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre></li><li><p><span>Supprimer les mots vides.</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>8</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">removeStopWords</span>(<span class="cm-variable">words</span>, <span class="cm-variable">stopwords</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> [<span class="cm-variable">x</span> <span class="cm-keyword">for</span> <span class="cm-variable">x</span> <span class="cm-keyword">in</span> <span class="cm-variable">words</span> <span class="cm-keyword">if</span> <span class="cm-variable">x</span> <span class="cm-keyword">not</span> <span class="cm-keyword">in</span> <span class="cm-variable">stopwords</span>]</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">documents</span> = <span class="cm-variable">documents</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">line</span>: <span class="cm-variable">removeStopWords</span>(<span class="cm-variable">line</span>, <span class="cm-variable">stopwords</span>))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">documents</span>.<span class="cm-property">take</span>(<span class="cm-number">2</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Resultats:</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># [['slow','moving','aimless','movie','distressed','drifting','young','man'],</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># ['sure','lost','flat','characters','audience','nearly','half','walked']]</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 176px;"></div><div class="CodeMirror-gutters" style="height: 176px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre></li><li><p><span>Appliquer TF-IDF</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>10</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span>.<span class="cm-property">mllib</span>.<span class="cm-property">feature</span> <span class="cm-keyword">import</span> <span class="cm-variable">HashingTF</span>, <span class="cm-variable">IDF</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">hashingTF</span> = <span class="cm-variable">HashingTF</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tf</span> = <span class="cm-variable">hashingTF</span>.<span class="cm-property">transform</span>(<span class="cm-variable">documents</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tf</span>.<span class="cm-property">cache</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">idf</span> = <span class="cm-variable">IDF</span>().<span class="cm-property">fit</span>(<span class="cm-variable">tf</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tfidf</span> = <span class="cm-variable">idf</span>.<span class="cm-property">transform</span>(<span class="cm-variable">tf</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">idfIgnore</span> = <span class="cm-variable">IDF</span>(<span class="cm-variable">minDocFreq</span>=<span class="cm-number">2</span>).<span class="cm-property">fit</span>(<span class="cm-variable">tf</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tfidfIgnore</span> = <span class="cm-variable">idfIgnore</span>.<span class="cm-property">transform</span>(<span class="cm-variable">tf</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 218px;"></div><div class="CodeMirror-gutters" style="height: 218px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre></li><li><p><span>Préparer les structures de données nécessaires pour la création du modèle: pour la phase </span><em><span>training</span></em><span> le modèle prend comme </span><em><span>input</span></em><span> la structure </span><code>RDD of LabeledPoints</code></p></li></ol><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>6</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span>.<span class="cm-property">mllib</span>.<span class="cm-property">regression</span> <span class="cm-keyword">import</span> <span class="cm-variable">LabeledPoint</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tfidfWithIndexes</span> = <span class="cm-variable">tfidfIgnore</span>.<span class="cm-property">zipWithIndex</span>().<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">x</span>: (<span class="cm-variable">x</span>[<span class="cm-number">1</span>], <span class="cm-variable">x</span>[<span class="cm-number">0</span>]))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">labelsWithIndexes</span> = <span class="cm-variable">labels</span>.<span class="cm-property">zipWithIndex</span>().<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">x</span>: (<span class="cm-variable">x</span>[<span class="cm-number">1</span>], <span class="cm-variable">x</span>[<span class="cm-number">0</span>]))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">labelsWithIndexes</span>.<span class="cm-property">take</span>(<span class="cm-number">5</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">trainingData</span> = <span class="cm-variable">tfidfWithIndexes</span>.<span class="cm-property">join</span>(<span class="cm-variable">labelsWithIndexes</span>).<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">x</span>: <span class="cm-variable">LabeledPoint</span>(<span class="cm-variable">x</span>[<span class="cm-number">1</span>][<span class="cm-number">1</span>], <span class="cm-variable">x</span>[<span class="cm-number">1</span>][<span class="cm-number">0</span>]))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">training</span>, <span class="cm-variable">test</span> = <span class="cm-variable">trainingData</span>.<span class="cm-property">randomSplit</span>([<span class="cm-number">0.7</span>, <span class="cm-number">0.3</span>])</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 155px;"></div><div class="CodeMirror-gutters" style="height: 155px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><p>&nbsp;</p><h1><a name="les-types-danalyse-nlp" class="md-header-anchor"></a><span>Les types d&#39;analyse NLP</span></h1><p><span>Il existe deux grandes catégories du NLP (selon l’algorithme d&#39;analyse):</span></p><blockquote><h5><a name="remarque" class="md-header-anchor"></a><span>Remarque:</span></h5><p><span>Dans ce travail on va utiliser (Pratiquement) un modèle statistique qui se base sur des algorithmes supervisés. Mais les méthodes de Deep Learning sont expliquées théoriquement seulement.  </span></p></blockquote><p>&nbsp;</p><h2><a name="basé-machine-learning-statistique" class="md-header-anchor"></a><span>Basé Machine Learning (statistique)</span></h2><p><span>Cette catégorie des algorithmes est la plus utiliseé vu sa simplicité, on peut trouver deux approches utilisées pour des objectives différents:</span></p><h3><a name="les-méthodes-supervisées" class="md-header-anchor"></a><span>Les méthodes supervisées</span></h3><p><span>Nécessite que la data-set soit annotée. Ces méthodes sont utilisées pour l&#39;analyse des sentiment, extraction des information des données, texte classification, ...etc. Les algorithmes les plus utilisés sont:</span></p><ul><li><em><span>Support Vector Machines (SVM)</span></em></li><li><em><span>Naïve Bayes</span></em></li><li><em><span>Champ aléatoire conditionnel (CRF)</span></em></li><li><em><span>Réseaux bayésien</span></em></li><li><span>... etc</span></li></ul><h3><a name="les-méthodes-non-supervisées" class="md-header-anchor"></a><span>Les méthodes non-supervisées</span></h3><p><span>Ne nécessite pas l&#39;annotation du data-sets. Et elles sont utilisées pour la morphologie, la segmentation des phrases, classification des textes, désambiguïsation lexicale, traduction, ...etc. </span></p><p>&nbsp;</p><h2><a name="basé-deep-learning" class="md-header-anchor"></a><span>Basé Deep Learning</span></h2><p><span>Dernièrement l&#39;apprentissage en profondeur (Deep Learning) est devenu l&#39;une des méthodes les plus utilisées pour résoudre des problèmes d&#39;apprentissages complexes puisqu&#39;il permet non seulement d&#39;étendre les limites des modèles précédemment vu (les modèles statistiques) mais également de donner parfois d’excellents résultats selon le contexte ou il est utilisé.</span></p><p><span>Même s&#39;il existe plusieurs recherches établies jusqu’à maintenant mais il y a deux approches qui sont largement utilisées pour le NLP (</span><code>CNN</code><span> et </span><code>RNN</code><span>).</span></p><h3><a name="cnn" class="md-header-anchor"></a><code>CNN</code></h3><p><strong><span>Les </span><code>CNN</code></strong><span> (Réseau neuronal convolutif) est un type de réseau de neurones artificiels (</span><code>ANN</code><span>) qui comme son nom l&#39;indique est un ensemble de neurones (représentent des poids) qui sont classé en couches (</span><code>layers</code><span>). La principale différence entre le </span><code>CNN</code><span> et </span><code>ANN</code><span> est que contrairement au </span><code>ANN</code><span> qui repose sur des fonction d&#39;activations pour passer d&#39;une couche a une autre, le </span><code>CNN</code><span> applique des filtres sur les données en entrées pour extraire les features.</span></p><p><img src="rapport.assets/0-NYqnYrLeC1J0Bon5.png" referrerpolicy="no-referrer"></p><p><span>Le principe de cette approche consiste tout d&#39;abord a découper les phrases en mots qui sont par la suite transformés en une matrice d&#39;intégrations de mots (la matrice qui est en entrée)  de dimension d, puis juste après découpe la matrice en entrée en plusieurs régions pour qu&#39;ensuite on applique les différents filtres sur les matrices qui les correspondent, puis une étape cruciale appelé le </span><code>pooling</code><span> doit être lancée, cette dernière consiste a effectuer des transformations sur les matrices résultantes pour être égales a une taille déjà prédéfinie. On peut identifier deux principales raisons a cette méthode : </span></p><ol start='' ><li><span>Donner une taille fixe a la matrice de sorties</span></li><li><span>Réduire la taille de la matrice de sorties </span></li></ol><p><span>et ce quelque soit la taille de la matrice en entrée. Au final on aura la représentation de la phase finale qui représente un classificateur basé sur les features extraites.</span></p><p><img src="rapport.assets/Screenshot from 2020-06-07 19-19-17.png" referrerpolicy="no-referrer"></p><p><span>En général, les CNN sont efficaces car ils peuvent extraire des indices sémantiques lorsqu&#39;il s&#39;agit du contexte globale , mais ils ont du mal à préserver l&#39;ordre séquentiel et à modéliser les informations contextuelles à longue distance. Les modèles récurrents sont mieux adaptés à ce type d&#39;apprentissage et ils sont abordés ci-après.</span></p><h3><a name="rnn" class="md-header-anchor"></a><code>RNN</code></h3><p><strong><span>Les </span><code>RNN</code><span>s</span></strong><span> (Réseau de neurones récurrents) sont des réseaux de neurones conçus spécialement pour être très performant lorsqu&#39;il s&#39;agit des données en séquences et ceci leur donne un très grand avantage pour le NLP. Les </span><code>RNN</code><span>s sont très bons pour le traitement des données en séquence puisqu&#39;ils reposent sur un concept appelé </span><code>Sequential Memory</code><span> , ce dernier consiste a apprendre les choses en se basant sur un mécanisme qu&#39;on utilise nous les humains énormément dans notre vie, voici l&#39;une des méthodes les plus efficace pour le modéliser.</span></p><p><span>Donc si on demande a quelqu&#39;un de réciter les alphabets dans l&#39;ordre normal </span></p><p><code>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</code></p><p><span>Il n&#39;aura aucune difficulté a le faire mais si on lui donne un alphabet au milieu et on lui demande de compléter la séquence il aura quelques difficultés mais juste après il va pouvoir les réciter très rapidement et ceci puisque cette personne avait appris les alphabets en séquence.</span></p><p><span>Voici un défis plus difficile qui consiste a réciter les alphabet dans l&#39;ordre inverse </span></p><p><code>Z Y X W V U T S R Q P O N M L K J I H G F E D C B A</code></p><p><span>cela devient encore plus difficile même si tout le monde connaît les alphabets, juste le fait que le séquencement n&#39;est pas respecté rend la tache difficile et même parfois impossible, la même chose est appliqué pour les </span><code>RNN</code><span>s.</span></p><p><span>Pour pouvoir inclure ce concept dans ces réseau de neurones il suffit juste de prendre un </span><code>ANN</code><span> simple, puis dans chaque couche on crée un arcs qui permet de rattacher la sortie a l&#39;entrée, grâce a cela les données de l&#39;état précédent vont être ajoutées aux données de l’état courant</span></p><p><img src="rapport.assets/Screenshot from 2020-06-07 17-45-52.png" referrerpolicy="no-referrer"></p><p><span>Donc le principale avantage du Réseau de neurones récurrents et la possibilité de donner un sens aux séquencements de mots pour savoir avec précision  le sujet et le contexte de cette phrase, le meilleur exemple ou l&#39;on peut appliquer ce modèle est un chat-bot car il permet facilement de comprendre ce que l&#39;utilisateur veut a travers la phrase qu&#39;il a exprimé en entrée et par la suite le modèle pourra définir la meilleur réponse et la plus convenable par rapport a ce qui a été demandé.</span></p><p>&nbsp;</p><h1><a name="la-construction-et-teste-des-modèles" class="md-header-anchor"></a><span>La construction et teste des modèles</span></h1><p><span>On va construire 3 modèles</span></p><ul><li><span>Le premier c&#39;est naïve bayes</span></li></ul><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span>.<span class="cm-property">mllib</span>.<span class="cm-property">classification</span> <span class="cm-keyword">import</span> <span class="cm-variable">NaiveBayes</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">model1</span> = <span class="cm-variable">NaiveBayes</span>.<span class="cm-property">train</span>(<span class="cm-variable">training</span>, <span class="cm-number">5.0</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># le 2eme parametre c'est le parametre de lissage=5.0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">predictionAndLabel_NB</span> = <span class="cm-variable">test</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">p</span>: (<span class="cm-variable">model1</span>.<span class="cm-property">predict</span>(<span class="cm-variable">p</span>.<span class="cm-property">features</span>), <span class="cm-variable">p</span>.<span class="cm-property">label</span>))</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 92px;"></div><div class="CodeMirror-gutters" style="height: 92px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><ul><li><span>Le deuxième c&#39;est SVM</span></li></ul><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>3</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span>.<span class="cm-property">mllib</span>.<span class="cm-property">classification</span> <span class="cm-keyword">import</span> <span class="cm-variable">SVMWithSGD</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">model2</span> = <span class="cm-variable">SVMWithSGD</span>.<span class="cm-property">train</span>(<span class="cm-variable">training</span>, <span class="cm-variable">iterations</span>=<span class="cm-number">100</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">predictionAndLabel_SVM</span> = <span class="cm-variable">test</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">p</span>: (<span class="cm-variable">model2</span>.<span class="cm-property">predict</span>(<span class="cm-variable">p</span>.<span class="cm-property">features</span>), <span class="cm-variable">p</span>.<span class="cm-property">label</span>))</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 71px;"></div><div class="CodeMirror-gutters" style="height: 71px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><ul><li><span>Le troisième c&#39;est RF</span></li></ul><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">from</span> <span class="cm-variable">pyspark</span>.<span class="cm-property">mllib</span>.<span class="cm-property">tree</span> <span class="cm-keyword">import</span> <span class="cm-variable">RandomForest</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">model</span> = <span class="cm-variable">RandomForest</span>.<span class="cm-property">trainClassifier</span>(<span class="cm-variable">training</span>, <span class="cm-variable">numClasses</span>=<span class="cm-number">2</span>, <span class="cm-variable">numTrees</span>=<span class="cm-number">5</span>, <span class="cm-variable">categoricalFeaturesInfo</span>={}, <span class="cm-variable">featureSubsetStrategy</span>=<span class="cm-string">"auto"</span>, <span class="cm-variable">maxDepth</span>=<span class="cm-number">4</span>, <span class="cm-variable">maxBins</span>=<span class="cm-number">32</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">predictions</span> = <span class="cm-variable">model</span>.<span class="cm-property">predict</span>(<span class="cm-variable">test</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">x</span>: <span class="cm-variable">x</span>.<span class="cm-property">features</span>))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">predictionAndLabel_RF</span> = <span class="cm-variable">test</span>.<span class="cm-property">map</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">lp</span>: <span class="cm-variable">lp</span>.<span class="cm-property">label</span>).<span class="cm-property">zip</span>(<span class="cm-variable">predictions</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 113px;"></div><div class="CodeMirror-gutters" style="height: 113px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><blockquote><h5><a name="remarque" class="md-header-anchor"></a><span>Remarque:</span></h5><p><span>Les paramètres utilisées dans la création des modèles sont choisis de tel sort que </span><strong><span>l&#39;accuracy</span></strong><span> des modèles soit la meilleure possible.</span></p></blockquote><p>&nbsp;</p><h1><a name="comparaison-entre-les-modèles" class="md-header-anchor"></a><span>Comparaison entre les modèles</span></h1><p><span>On peut comparer </span><strong><span>l&#39;accuracy</span></strong><span> des modèles</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="python" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.3906px; left: 46.9531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>14</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">accuracy</span>(<span class="cm-variable">predictionAndLabel</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-number">1.0</span> <span class="cm-operator">*</span> <span class="cm-variable">predictionAndLabel</span>.<span class="cm-property">filter</span>(<span class="cm-keyword">lambda</span> <span class="cm-variable">pl</span>: <span class="cm-variable">pl</span>[<span class="cm-number">0</span>] == <span class="cm-variable">pl</span>[<span class="cm-number">1</span>]).<span class="cm-property">count</span>() <span class="cm-operator">/</span> <span class="cm-variable">test</span>.<span class="cm-property">count</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># NB</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span>(<span class="cm-string">'model accuracy {}'</span>.<span class="cm-property">format</span>(<span class="cm-variable">accuracy</span>(<span class="cm-variable">predictionAndLabel_NB</span>)))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Resultats: model accuracy 0.7817982456140351</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># SVM</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span>(<span class="cm-string">'model accuracy {}'</span>.<span class="cm-property">format</span>(<span class="cm-variable">accuracy</span>(<span class="cm-variable">predictionAndLabel_SVM</span>)))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Resultats: model accuracy 0.7872807017543859</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># RF</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 33px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span>(<span class="cm-string">'model accuracy {}'</span>.<span class="cm-property">format</span>(<span class="cm-variable">accuracy</span>(<span class="cm-variable">predictionAndLabel_RF</span>)))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 33px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Resultats: model accuracy 0.4868421052631579</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 323px;"></div><div class="CodeMirror-gutters" style="height: 323px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 41px;"></div></div></div></div></pre><p><span>On remarque clairement que les modèles les plus adaptés au traitement de langage naturel sont </span><strong><span>Naïve Bayes</span></strong><span> et </span><strong><span>SVM</span></strong><span> avec une exactitude de </span><strong><span>78%</span></strong><span>.</span></p><p>&nbsp;</p><h1><a name="utilité-de-spark" class="md-header-anchor"></a><span>Utilité de Spark</span></h1><p><span>L&#39;utilisation de Spark  a apportée une grande différence en terme de: </span></p><ul><li><strong><span>Temps</span></strong><span>: Les structures de données offertes par Spark (</span><code>RDD</code><span>) sont facilement partageables sur des threads dans l&#39;ordinateur (ou le </span><code>cluster</code><span> si utilisation dans un réseau) ce qui accélère le travail.</span></li><li><strong><span>Re-utilisabilité</span></strong><span>:  Le code utilisé dans un seul ordinateur (mode développement) est le même code utilisé dans le </span><code>cluster</code><span> (mode production)</span></li><li><strong><span>Facilité d&#39;utilisation</span></strong><span>: Spark offert une </span><code>API</code><span> riche des structures de données, des algorithmes de Machine Learning et de calcule de performance des modèles, des méthodes puissantes d&#39;exploration des données.</span></li></ul></div>
+</body>
+</html>

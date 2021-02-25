@@ -10,22 +10,8 @@
 
 
 
-
-
-
-
-
-
-
-
 <div style="text-align:center"><h1>NLP avec Spark</h1></div>
 <div style="text-align:center"><h2>Analyse des sentiments dans les commentaires</h2></div>
-
-
-
-
-
-
 
 
 
