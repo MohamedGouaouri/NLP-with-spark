@@ -17,7 +17,6 @@
 
 
 
-
 <div style="text-align:center"><h1>NLP with Spark</h1></div>
 <div style="text-align:center"><h2>Sentiment analysis in comments</h2></div>
 
@@ -28,20 +27,11 @@
 
 
 
+Travail fait par  **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
 
 
 
 
-
-
-
-
-
-
-
-Work done by **CHEBBAH Mehdi** and **HAMMAS Ali Cherif**.
-
-<div class="page-break"></div>
 
 
 
