@@ -7,18 +7,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div style="text-align:center"><h1>NLP with Spark</h1></div>
 <div style="text-align:center"><h2>Sentiment analysis in comments</h2></div>
+
+
 
 
 
@@ -218,7 +210,7 @@ Although there is a lot of established researches so far, there are two approach
 
 The **`CNN`** ( *Convolutional Neural Network*) is a type of artificial neural network (`ANN`) which as its name implies is a set of neurons (representing weights) that are classified in `layers`. The main difference between the `CNN` and `ANN` is that unlike the `ANN` which relies on activation functions to move from one layer to another, the `CNN` applies filters to the input data to extract features.
 
-![](rapport.assets/0-NYqnYrLeC1J0Bon5.png)
+![](assets/0-NYqnYrLeC1J0Bon5.png)
 
 The idea of this approach consists first of all in cutting the sentences into words which are then transformed into a matrix of word integrations (the input matrix) of dimension d, then just after the input matrix is cut into several regions so that the different filters are then applied to the corresponding matrices, then a crucial step called "pooling" must be launched, which consists in carrying out transformations on the resulting matrices to be equal to a predefined size. There are two main reasons for this process: 
 
@@ -227,7 +219,7 @@ The idea of this approach consists first of all in cutting the sentences into wo
 
 whatever the size of the input matrix. At the end we will have the representation of the final phase which represents a classifier based on the extracted features.
 
-![](rapport.assets/Screenshot from 2020-06-07 19-19-17.png)
+![](assets/Screenshot from 2020-06-07 19-19-17.png)
 
 In general, **CNNs** are efficient because they can extract semantic clues when it comes to the global context, but they have difficulty preserving sequential order and modeling long distance contextual information. Recurrent models are better suited for this type of learning and are discussed below.
 
@@ -249,7 +241,7 @@ it becomes even more difficult even if everyone knows the alphabets, just the fa
 
 To be able to include this concept in these neural networks it is enough to take a simple `ANN`, then in each layer an arc is created that allows to connect the output to the input, this way the data of the previous state will be added to the data of the current state.
 
-![](rapport.assets/Screenshot from 2020-06-07 17-45-52.png)
+![](assets/Screenshot from 2020-06-07 17-45-52.png)
 
 Therefore, the main advantage of the Recurrent Neural Network is the possibility of giving a meaning to the word sequences in order to know precisely the subject and the context of that sentence, the best example where this model can be applied is a chat-bot because it allows to easily understand what the user wants through the sentence he has expressed in the input and afterwards the model will be able to define the best and most suitable answer in relation to what has been asked for.
 
