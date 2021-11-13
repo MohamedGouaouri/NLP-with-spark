@@ -17,9 +17,7 @@
 
 
 
-
-
-Travail fait par  **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
+Work done by  **CHEBBAH Mehdi** and **HAMMAS Ali Cherif**
 
 
 
